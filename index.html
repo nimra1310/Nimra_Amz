@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+      <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio website of Grosid, a full-stack developer showcasing projects, blog, and contact info.">
-    <meta name="keywords" content="portfolio, developer, web development, projects, blog">
-    <title>Grosid - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Nimra Visuals - Portfolio</title>
+
 
      <style>
         * {
@@ -78,6 +75,94 @@ nav a {
     text-decoration: none;
     border-radius: 5px;
 }
+ 
+ 
+
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: center;
+      padding: 4rem 6rem;
+      gap: 3rem;
+    }
+
+    .hero-content h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-content h1 span {
+      background: linear-gradient(90deg, #f2b04c, #0b1f3a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-content p {
+      font-size: 1.1rem;
+      color: #475569;
+      max-width: 520px;
+      margin-bottom: 2.2rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .btn-primary {
+      padding: 0.9rem 1.8rem;
+      background: #0b1f3a;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .btn-secondary {
+      padding: 0.9rem 1.8rem;
+      background: transparent;
+      color: #0b1f3a;
+      border: 2px solid #0b1f3a;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo-card {
+      background: #ffffff;
+      padding: 3rem;
+      border-radius: 20px;
+      box-shadow: 0 20px 50px rgba(11,31,58,0.15);
+    }
+
+    .logo-card img {
+      max-width: 280px;
+      width: 100%;
+      display: block;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 3rem 2rem;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+  
+
 
 section {
     padding: 2rem 1rem;
@@ -108,16 +193,20 @@ footer {
              </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="#hero">Grosid</a>
+      <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="cymbalta logo.jpg" alt="" style="width: 200px; height: 100px;">
+            <div class="logo-text">
+                
             </div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+        </div>
+     <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -125,7 +214,7 @@ footer {
     <main>
         <section id="hero">
             <div class="hero-content">
-                <h1>Hi, I'm Grosid</h1>
+                <h1>Hi, I'm Nimra Visuals</h1>
                 <p>Full-stack developer passionate about building innovative web solutions, open-source projects, and sharing knowledge through my blog.</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn primary">View My Work</a>
